@@ -65,7 +65,7 @@ Toàn bộ quy trình được triển khai theo kiến trúc **serverless**, s�
 
 ## 📄 Tài liệu trình bày
 
-📥 [Xem slides giới thiệu dự án tại đây](./slides.pdf)
+📥 [Xem slides trình bày sản phẩm tại đây](./slides.pdf)
 
 ---
 
