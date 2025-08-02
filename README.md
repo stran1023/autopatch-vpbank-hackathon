@@ -5,8 +5,6 @@
   <img src="picture/challenge.png" alt="Challenge overview" width="700"/>
 </p>
 
----
-
 <p align="left">
   <em>Repo này là toàn bộ sản phẩm (prototype) nộp cho bản tổ chức, được cả nhóm thực hiện trong vòng 1 tháng (lên ý tưởng, thiết kế, triển khai và thử nghiệm). Đây là lần đầu tiên mình tham gia một cuộc thi hackathon, tuy không có giải nhưng mình vẫn rất vui vì được kết nối với 2 bạn Hà Nội trong team và có thêm kiến thức liên quan đến các dịch vụ của AWS. 
 
@@ -65,14 +63,17 @@ Toàn bộ quy trình được triển khai theo kiến trúc **serverless**, s�
 
 ---
 
-📄 [Xem slides trình bày sản phẩm tại đây](./slides.pdf)
+## 📄 Tài liệu trình bày
+
+📥 [Xem slides giới thiệu dự án tại đây](./slides.pdf)
 
 ---
 
 ## 📁 Cấu trúc thư mục
 ```
 autopatch-vpbank-hackathon/
-├── autopatch-frontend/ # Giao diện người dùng (React + Vite)
-├── autopatch-backend/ # Chủ yếu là các hàm Lambda, và cách setup các dịch vụ khác liên quan
-├── README.md # File này
-└── slides.pdf # Giao diện sản phẩm và luồng dịch vụ hoạt động bên dưới
+├── autopatch-frontend/  # Giao diện người dùng (React + Vite)
+├── autopatch-backend/   # Chủ yếu là các hàm Lambda, và cách setup các dịch vụ khác liên quan
+├── README.md            # File này
+├── picture/             # Thư mục ảnh liên quan
+└── slides.pdf           # Giao diện sản phẩm và luồng dịch vụ hoạt động bên dưới
