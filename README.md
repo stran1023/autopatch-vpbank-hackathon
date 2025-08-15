@@ -1,5 +1,10 @@
 <h1 align="center">🔧 AutoPatch - VPBank Hackathon 2025</h1>
 
+<h3>🥊 Chứng nhận tham gia</h3>
+<p align="center">
+  <img src="picture/Certificate v2 - Participation (3).png" alt="Certificate" width="700"/>
+</p>
+
 <h3>🥊 Thử thách của nhóm</h3>
 <p align="center">
   <img src="picture/challenge.png" alt="Challenge overview" width="700"/>
