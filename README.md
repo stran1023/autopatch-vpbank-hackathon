@@ -1,6 +1,6 @@
-<h1 align="center">🔧 AutoPatch - VPBank Hackathon 2025</h1>
+<img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/1f66c64f-a877-4893-881e-99989a244eb1" /><h1 align="center">🔧 AutoPatch - VPBank Hackathon 2025</h1>
 
-<h3>🥊 Chứng nhận tham gia</h3>
+<h3>📜 Chứng nhận tham gia</h3>
 <p align="center">
   <img src="picture/Certificate v2 - Participation (3).png" alt="Certificate" width="700"/>
 </p>
