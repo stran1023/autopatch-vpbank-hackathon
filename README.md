@@ -61,6 +61,8 @@ Toàn bộ quy trình được triển khai theo kiến trúc **serverless**, s�
 7. **Hiển thị kết quả lên giao diện người dùng**, bao gồm phần trăm đã vá và chi tiết theo từng server.
 8. **Gửi kết quả patch qua email (SNS).**
 
+<img width="2924" height="1901" alt="cicd_pipeline drawio" src="https://github.com/user-attachments/assets/5173686d-54db-41a0-ad2a-54413de9251a" />
+
 ### 🧩 Các dịch vụ AWS chính sử dụng:
 <p align="center">
   <img src="picture/services_used.png" alt="Services used" width="700"/>
