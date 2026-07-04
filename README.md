@@ -62,9 +62,17 @@ The entire workflow is deployed using a **serverless** architecture, with **API 
 <img width="2924" height="1901" alt="cicd_pipeline drawio" src="https://github.com/user-attachments/assets/5173686d-54db-41a0-ad2a-54413de9251a" />
 
 ### 🧩 Main AWS Services Used:
-<p align="center">
-  <img src="picture/services_used.png" alt="Services used" width="700"/>
-</p>
+
+| Service | Purpose |
+|---|---|
+| **Lambda** | Handles core logic and backend tasks |
+| **Step Functions** | Orchestrates the automated patching workflow |
+| **DynamoDB** | Stores patch status and CVE-KB mappings |
+| **SSM (RunCommand)** | Executes patch scripts on EC2 instances |
+| **SNS** | Sends patch summary notifications (e.g., via email) |
+| **CloudWatch** | Logs and monitors for debugging purposes |
+| **API Gateway** | Exposes backend endpoints for the frontend |
+| **Amplify** | Hosts the frontend UI and connects it to backend APIs |
 
 ---
 
