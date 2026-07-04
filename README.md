@@ -1,86 +1,85 @@
 <h1 align="center">🔧 AutoPatch - VPBank Hackathon 2025</h1>
 
-<h3>📜 Chứng nhận tham gia</h3>
+<h3>📜 Participation Certificate</h3>
 <p align="center">
   <img src="picture/Certificate v2 - Participation (3).png" alt="Certificate" width="700"/>
 </p>
 
-<h3>🥊 Thử thách của nhóm</h3>
+<h3>🥊 Team Challenge</h3>
 <p align="center">
   <img src="picture/challenge.png" alt="Challenge overview" width="700"/>
 </p>
 
 <p align="left">
-  <em>Repo này là toàn bộ sản phẩm (prototype) nộp cho bản tổ chức, được cả nhóm thực hiện trong vòng 1 tháng (lên ý tưởng, thiết kế, triển khai và thử nghiệm). Đây là lần đầu tiên mình tham gia một cuộc thi hackathon, tuy không có giải nhưng mình vẫn rất vui vì được kết nối với 2 bạn Hà Nội trong team và có thêm kiến thức liên quan đến các dịch vụ của AWS. 
+  <em>This repo is the full product (prototype) submitted to the organizers, built by the entire team over the course of one month (ideation, design, implementation, and testing). This was my first hackathon — we didn't win any prize, but I'm really glad I got to connect with two teammates from Hanoi and deepen my knowledge of AWS services.
 
-  Vai trò của mình trong nhóm là leader - thiết kế kiến trúc tổng thể của hệ thống và hiện thực hóa phần backend trên AWS (Lambda, Step Functions, SSM...).
+  My role in the team was team leader — I designed the overall system architecture and implemented the backend on AWS (Lambda, Step Functions, SSM...).
   </em><br>
 </p>
 
 ---
 
-## 🧠 Chia sẻ cá nhân
+## 🧠 Personal Reflections
 
-- ✅ **Mức độ hoàn thành**: Dự án đã hoàn thành đúng với mục tiêu đề ra: hỗ trợ kiểm tra, đối chiếu và tự động vá lỗ hổng bảo mật trên các server Windows thông qua thông tin từ Microsoft MSRC và hệ thống EC2 của doanh nghiệp. Giao diện hiển thị tình trạng KB rõ ràng, cho phép chạy vá theo từng bản vá hoặc tất cả, có kết hợp giám sát tiến trình realtime. Tuy vẫn còn một vài điểm có thể cải thiện như tối ưu UI/UX và nâng cao kiểm soát phân quyền, hệ thống hiện tại đã đủ điều kiện để áp dụng nội bộ.
+- ✅ **Completion level**: The project fully met its intended goals: supporting the inspection, comparison, and automated patching of security vulnerabilities on Windows servers using data from Microsoft MSRC and the company's EC2 infrastructure. The UI clearly displays KB status, supports patching by individual patch or all at once, and includes real-time progress monitoring. While there is still room for improvement in UI/UX and access control, the current system is ready for internal deployment.
 
-- 🧩 **Kinh nghiệm tích lũy**:
-  - Làm quen với quy trình phát triển hệ thống phân tán, kết nối nhiều dịch vụ AWS. 
-  - Thiết kế luồng tự động (automation flow) với Step Functions: triển khai luồng kiểm tra và vá KB theo từng bước nhỏ (fetch KB, so sánh, vá, ghi nhận trạng thái...).
-  - Kết hợp các dịch vụ AWS như Lambda, DynamoDB, API Gateway, CloudWatch, và Systems Manager một cách liền mạch.
-  - Làm việc với JSONPath, cấu trúc event-driven, và đồng bộ luồng dữ liệu giữa nhiều lambda function.
-  - Triển khai cơ chế cập nhật trạng thái realtime cho từng instance thông qua cơ chế polling từ frontend.
+- 🧩 **Experience gained**:
+  - Gained hands-on experience with distributed system development, connecting multiple AWS services.
+  - Designed automation flows with Step Functions: implementing step-by-step KB check and patch flows (fetch KB, compare, patch, record status...).
+  - Seamlessly integrated AWS services including Lambda, DynamoDB, API Gateway, CloudWatch, and Systems Manager.
+  - Worked with JSONPath, event-driven architecture, and data flow synchronization across multiple Lambda functions.
+  - Implemented real-time status updates per instance via frontend polling.
 
-- 📘 **Kiến thức học được**:
-  - Xử lý dữ liệu bảo mật từ MSRC API và phân tích CVE severity theo logic nghiệp vụ.
-  - Cách sử dụng Step Functions để điều phối logic phức tạp thay vì dùng nhiều hàm lồng nhau.
-  - Lập trình Lambda bằng Python và xử lý logic không trạng thái.
-  - Cách sử dụng Systems Manager RunCommand để tương tác với EC2 Windows và thu thập kết quả.
-  - Áp dụng TTL vào DynamoDB để tự động xoá bản ghi tạm (giảm chi phí và tránh dữ liệu cũ).
-  - Lần đầu tiên làm việc với AWS: hiểu về IAM, quyền truy cập tài nguyên, các giới hạn dịch vụ, cách phân tách môi trường phát triển và sản xuất.
-  - Tổ chức project chuẩn hóa: tách module rõ ràng (fetch, patch, compare), phân chia frontend/backend hợp lý, và viết README có hướng dẫn đầy đủ.
-
-> Sự thật thú vị: Vì là lần đầu tiên mình sử dụng AWS nên ban đầu gặp khá nhiều khó khăn như hiểu permission của IAM, cách connect API Gateway với Lambda hay format đúng input cho Step Function. Tuy nhiên sau khi làm quen, mình cảm thấy rất hứng thú với cách AWS hỗ trợ xây dựng hệ thống mở rộng, không cần quản lý server mà vẫn đảm bảo bảo mật và hiệu suất.
+- 📘 **Knowledge acquired**:
+  - Processing security data from the MSRC API and analyzing CVE severity according to business logic.
+  - Using Step Functions to orchestrate complex logic instead of deeply nested functions.
+  - Writing Lambda functions in Python with stateless logic.
+  - Using Systems Manager RunCommand to interact with Windows EC2 instances and collect results.
+  - Applying TTL in DynamoDB to automatically delete temporary records (reducing cost and avoiding stale data).
+  - First-time experience with AWS: understanding IAM, resource access permissions, service limits, and separating development from production environments.
+  - Structuring a project properly: clean module separation (fetch, patch, compare), a clear frontend/backend split, and writing a complete README with full documentation.
 
 ---
 
-## 📌 Giới thiệu dự án
+## 📌 Project Overview
 
-**AutoPatch** là hệ thống tự động giúp kiểm tra, phân tích và cập nhật các bản vá bảo mật cho hệ điều hành **Windows Server** trên môi trường AWS.
+**AutoPatch** is an automated system for inspecting, analyzing, and applying security patches to **Windows Server** operating systems in an AWS environment.
 
-Toàn bộ quy trình được triển khai theo kiến trúc **serverless**, sử dụng **API Gateway** kết nối với các hàm **AWS Lambda**, giúp đảm bảo hiệu năng cao, dễ bảo trì và tiết kiệm chi phí vận hành.
+The entire workflow is deployed using a **serverless** architecture, with **API Gateway** connecting to **AWS Lambda** functions — ensuring high performance, easy maintenance, and low operational cost.
 
-### 🔁 Quy trình tổng thể:
-1. **Fetch dữ liệu CVE mới nhất** từ Microsoft MSRC API.
-2. **Lọc dữ liệu CVE** theo sản phẩm liên quan (Windows Server Core), mức độ nghiêm trọng (High/Critical), và định dạng lại thông tin (ID, KB, CVSS...).
-3. **Lưu trữ CVE đã xử lý** vào DynamoDB để làm nguồn tham chiếu so sánh.
-4. **Lấy danh sách EC2 instances**, gọi **AWS SSM RunCommand** để kiểm tra các KB đã cài và khả dụng.
-5. **So sánh và xác định các KB thiếu** (chưa được cài đặt).
-6. Cho phép:
-   - Chạy vá tất cả KB còn thiếu cho toàn bộ server.
-   - Chạy vá tất cả KB còn thiếu cho một server.
-7. **Hiển thị kết quả lên giao diện người dùng**, bao gồm phần trăm đã vá và chi tiết theo từng server.
-8. **Gửi kết quả patch qua email (SNS).**
+### 🔁 Overall Workflow:
+1. **Fetch the latest CVE data** from the Microsoft MSRC API.
+2. **Filter CVE data** by relevant product (Windows Server Core), severity level (High/Critical), and reformat the information (ID, KB, CVSS...).
+3. **Store processed CVEs** in DynamoDB as a reference source for comparison.
+4. **Retrieve the list of EC2 instances**, call **AWS SSM RunCommand** to check installed and available KBs.
+5. **Compare and identify missing KBs** (not yet installed).
+6. Allow:
+   - Patching all missing KBs across all servers.
+   - Patching all missing KBs for a single server.
+7. **Display results on the user interface**, including patch percentage and per-server details.
+8. **Send patch results via email (SNS).**
 
 <img width="2924" height="1901" alt="cicd_pipeline drawio" src="https://github.com/user-attachments/assets/5173686d-54db-41a0-ad2a-54413de9251a" />
 
-### 🧩 Các dịch vụ AWS chính sử dụng:
+### 🧩 Main AWS Services Used:
 <p align="center">
   <img src="picture/services_used.png" alt="Services used" width="700"/>
 </p>
 
 ---
 
-## 📄 Tài liệu trình bày
+## 📄 Presentation Slides
 
-📥 [Xem slides trình bày sản phẩm tại đây](./slides.pdf)
+📥 [View the product presentation slides here](./slides.pdf)
 
 ---
 
-## 📁 Cấu trúc thư mục
+## 📁 Directory Structure
 ```
 autopatch-vpbank-hackathon/
-├── autopatch-frontend/  # Giao diện người dùng (React + Vite)
-├── autopatch-backend/   # Chủ yếu là các hàm Lambda, và cách setup các dịch vụ khác liên quan
-├── README.md            # File này
-├── picture/             # Thư mục ảnh liên quan
-└── slides.pdf           # Giao diện sản phẩm và luồng dịch vụ hoạt động bên dưới
+├── autopatch-frontend/  # User interface (React + Vite)
+├── autopatch-backend/   # Mainly Lambda functions and setup for related services
+├── README.md            # This file
+├── picture/             # Related images directory
+└── slides.pdf           # Product UI and underlying service flow
+```
