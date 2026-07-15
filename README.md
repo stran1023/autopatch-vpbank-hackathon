@@ -19,6 +19,12 @@
 
 ---
 
+## 📄 Presentation Slides - Demo
+
+📥 [View the product presentation slides here](./slides.pdf)
+
+---
+
 ## 🧠 Personal Reflections
 
 - ✅ **Completion level**: The project fully met its intended goals: supporting the inspection, comparison, and automated patching of security vulnerabilities on Windows servers using data from Microsoft MSRC and the company's EC2 infrastructure. The UI clearly displays KB status, supports patching by individual patch or all at once, and includes real-time progress monitoring. While there is still room for improvement in UI/UX and access control, the current system is ready for internal deployment.
@@ -73,12 +79,6 @@ The entire workflow is deployed using a **serverless** architecture, with **API 
 | **CloudWatch** | Logs and monitors for debugging purposes |
 | **API Gateway** | Exposes backend endpoints for the frontend |
 | **Amplify** | Hosts the frontend UI and connects it to backend APIs |
-
----
-
-## 📄 Presentation Slides
-
-📥 [View the product presentation slides here](./slides.pdf)
 
 ---
 
